@@ -1,0 +1,14 @@
+.estrela{
+    color: gold;
+}
+
+.sectionAvaliacao{
+    float: right;
+    margin: 1%;
+}
+
+.sectionComentarios{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
