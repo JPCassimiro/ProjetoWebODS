@@ -85,3 +85,12 @@ footer{
     margin-top: 1%;
 }
 
+.containerMarcaPagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.marcaPagina{
+    margin-top: 1%;
+    margin-bottom: 60%;
+}
