@@ -15,8 +15,7 @@
     margin: 1%;
     background-color: #DFE0A7;
     width: 500px;
-    height: 600px;
-}
+    height: 600px;}
 
 .form{
     display: flex;
@@ -24,11 +23,12 @@
     justify-content: space-between;
     align-items: flex-start;
     flex:1;
+    box-sizing: border-box;
 }
 
 .campoForm{
     display: flex;
-    flex-direction: row;
+    margin-left: 5%;
 }
 
 footer{
@@ -60,7 +60,7 @@ input{
 }
 
 #Cadastrar{
-    align-self: center;
+    margin-left: 28%;
     background-color: #AA5D0C;
     margin-bottom: 15%;
     width: 45%;
@@ -76,14 +76,4 @@ p,label,input{
 p{
     font-size: xx-large;
     font-weight: 400;
-}
-
-#confirmarSenha{
-}
-
-label{
-    margin-left: 5%;
-}
-
-#confirmarSenhaLabel{
 }

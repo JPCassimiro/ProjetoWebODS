@@ -1,5 +1,5 @@
 .estrela{
-    color: gold;
+    color: darkgoldenrod;
 }
 
 .sectionAvaliacao{
@@ -11,4 +11,8 @@
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
+}
+
+textarea{
+    resize: none;
 }

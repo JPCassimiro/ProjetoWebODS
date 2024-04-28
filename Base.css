@@ -11,17 +11,6 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.navegacao{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border: 1px solid black;
-    margin-bottom: 1%;
-}
-
 .link{
     margin-left: 2%;
     text-decoration: none;
@@ -46,24 +35,25 @@ footer{
     width: 100%;
     height: 100%;
     background-image: url(https://s3-alpha-sig.figma.com/img/fd78/3cbd/1ce92e33ebc971b7468c18fcdf210e55?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HId3O9TYqTpOn9t9E5lTEts7EKmQe6NBWBBmOFXjCDRMG3Zz~~fbMByes-aYJ61Pj6A62f7fT3oYkBC-2q48oLLCq0CzivVqcDRvrYv8mjbGy9C1OeOAZ-F6j74l3eGaBEzxhMJ1nGSxXwV1e~VmmPxbDdPelBoWW0H6Ai43WLTViV6XN8WQzZug9M2WCTHlCiejHq3p7FVgsKWlt8ArawhBDqHl9ISg819zv2wiX1CnxNkaEY7YmkwOioTCodGfcjy2a3zjdf3DIXOd35crp0wQvFklQdpDctDkB5BiyNowfG5Yy3cbvrW83xmI5~6iqRazBNt-MMM5yPVb5aUfLQ__);
+    background-size: cover;
 }
 
 .sectionLivro{
     margin-top: 2%;
-    border: 10px solid #774005;
+    border: 20px solid #552E06;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-bottom: 2%;
     height: 800px;
     width: 70%;
 }
 
-.pagina{
+.pagina1{
     display: flex;
-    background-color: #DFE0A7;
+    background-image: linear-gradient(to right,#DFE0A7 0px,#DFE0A7 90%,black 101%);
     border: 1px solid black;
     flex-direction: row;
     flex: 0.5;
@@ -71,9 +61,28 @@ footer{
     align-items: flex-start;
     flex-wrap: wrap;
     height: max-content;
-    padding: 1%;
+    padding: 2%;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Cedarville cursive', cursive;
+    font-size: large;
+} 
+
+.pagina2{
+    display: flex;
+    background-image: linear-gradient(to left,#DFE0A7 0px,#DFE0A7 90%,black 101%);
+    border: 1px solid black;
+    flex-direction: row;
+    flex: 0.5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: max-content;
+    padding: 2%;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Cedarville cursive', cursive;
+    font-size: large;
 } 
 
 footer{
@@ -93,4 +102,8 @@ footer{
 .marcaPagina{
     margin-top: 1%;
     margin-bottom: 60%;
+}
+
+button{
+    font-family: 'Cedarville cursive', cursive;
 }

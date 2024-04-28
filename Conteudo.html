@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Base.css">
-    <link rel="stylesheet" href="/Receitas.css">
+    <link rel="stylesheet" href="/Conteudo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
@@ -16,14 +16,9 @@
        <h1>Projeto 1</h1>
     </header>
     <main>
-        <nav class="navegacao">
-            <a href="/Homepage.html" class="link" title="Homepage">Homepage</a>
-            <a href="/Lista.html" class="link" title="Receitas">Receitas</a>
-            <a href="/Lista.html" class="link" title="Plantio">Plantio</a>
-        </nav>
         <section class="sectionPrincipal">
             <section class="sectionLivro">
-                <div class="pagina">
+                <div class="pagina1">
                     <section class="sectionAvaliacao">
                         <span class="estrela">
                             <span class="material-symbols-outlined">grade</span>
@@ -42,15 +37,21 @@
                         </span>
                     </section>
                 </div>
-                <div class="pagina">
+                <div class="pagina2">
                 </div>
+                <section class="containerMarcaPagina">
+                    <button class="marcaPagina" onclick="location.href = './Homepage.html'">Homepage</button>
+                    <button class="marcaPagina" onclick="location.href = './ListaDeReceitas.html'">Receitas</button>
+                    <button class="marcaPagina" onclick="location.href = './ListaDePlantio.html'">Plantio</button>
+                    <button class="marcaPagina" onclick="location.href = './Login.html'">Logout</button>
+                </section>
             </section>
             <section class="sectionComentarios">
                 <h6>
-                    Comentaiors
+                    Comentarios
                 </h6>
                 <form class="formComentarios">
-                    <textarea name="comentarios" id="caixaDeComentarios" cols="10" rows="10" placeholder="Escreva seu comentario"></textarea>
+                    <textarea name="comentarios" id="caixaDeComentarios" cols="30" rows="5" placeholder="Escreva seu comentario"></textarea>
                     <button class="botaoEnviar">Enviar</button>
                 </form>
             </section>
