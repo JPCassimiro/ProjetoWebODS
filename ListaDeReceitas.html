@@ -16,6 +16,9 @@
     <main>
         <section class="sectionPrincipal">
             <section class="sectionLivro">
+                <section class="containerMarcaPagina">
+                    <button style="visibility: hidden;" class="marcaPagina" onclick="">Homepage</button>
+                </section>
                 <div class="pagina1">
                     <ul>
                         <li><a href="./Conteudo.html">Receita *</a></li>
@@ -39,11 +42,15 @@
                     </ul>
                 </div>
                 <section class="containerMarcaPagina">
-                    <button class="marcaPagina" onclick="location.href = './Homepage.html'">Homepage</button>
-                    <button class="marcaPagina" onclick="location.href = './ListaDeReceitas.html'">Receitas</button>
-                    <button class="marcaPagina" onclick="location.href = './ListaDePlantio.html'">Plantio</button>
-                    <button class="marcaPagina" onclick="location.href = './Login.html'">Logout</button>
-                </section>
+                    <div style="display: flex; flex-direction: column;">
+                        <button id="marcaHome" class="marcaPagina" onclick="location.href = './Homepage.html'">Homepage</button>
+                        <button id="marcaReceita" class="marcaPagina" onclick="location.href = './ListaDeReceitas.html'">Receitas</button>    
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <button id="marcaPlantio" class="marcaPagina" onclick="location.href = './ListaDePlantio.html'">Plantio</button>
+                        <button id="marcaLogin" class="marcaPagina" onclick="location.href = './Login.html'">Logout</button>    
+                    </div>
+                    </section>
             </section>
         </section>
     </main>

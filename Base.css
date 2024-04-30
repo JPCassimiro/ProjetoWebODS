@@ -40,15 +40,17 @@ footer{
 
 .sectionLivro{
     margin-top: 2%;
-    border: 20px solid #552E06;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     border-radius: 4px;
     margin-bottom: 2%;
-    height: 800px;
-    width: 70%;
+    height: 750px;
+    width: 85%;
+    background-color: #552E06;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .pagina1{
@@ -97,13 +99,42 @@ footer{
 .containerMarcaPagina{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    z-index: 10;
 }
 
 .marcaPagina{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 60%;
+    margin-left: -2%;
+    width: 160%;
+    background-color: #DFE0A7;
+    height: 35px;
+}
+
+#marcaHome{
+    border: 3px solid red;
+    border-left: 0;
+}
+
+#marcaReceita{
+    border: 3px solid #24FF00;
+    border-left: 0;
+}
+
+#marcaPlantio{
+    border: 3px solid #0038FF;
+    border-left: 0;
+}
+
+#marcaLogin{
+    border: 3px solid #FFE500;
+    border-left: 0;
 }
 
 button{
     font-family: 'Cedarville cursive', cursive;
+    font-size: 17px;
+    text-align: center;
 }
