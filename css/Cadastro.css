@@ -20,7 +20,8 @@ body{
     margin: 1%;
     background-color: #DFE0A7;
     width: 500px;
-    height: 600px;}
+    height: 600px;
+}
 
 .form{
     display: flex;
