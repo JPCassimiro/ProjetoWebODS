@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
+    width: 50%;
+    overflow: scroll;
+    height: 200px;
 }
 
 textarea{

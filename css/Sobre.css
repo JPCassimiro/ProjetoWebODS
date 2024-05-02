@@ -9,18 +9,12 @@
 }
 
 .containerLogo{
-    margin-top: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     font-size: large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.logo{
-    width: 100px;
-    height: 100px;
+    width: 15%;
 }
 
 header{
@@ -31,6 +25,11 @@ header{
     padding: 2%;
     margin-bottom: 1%;
     background-color: bisque;
+    height: 80px;
+}
+
+.logo{
+    width: 100px;
     height: 100px;
 }
 
@@ -42,10 +41,16 @@ footer{
     padding: 2%;
     margin-top: 1%;
     background-color: bisque;
-    height: 100px;
+    height: 35px;
     justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
+.textoLogo{
+    margin-left: 5%;
+    font-family: "Pacifico", cursive;
+}
 
 p{
     margin-left: 3%;
