@@ -53,3 +53,13 @@ textarea{
     margin-right: 4%;
     margin-top: 5%;
 }
+
+.imagemConteudo{
+    height: 160px;
+    width: 190px;
+    border: 3px solid black;
+}
+
+h6{
+    font-size: large;
+}
