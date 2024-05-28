@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&family=Jacquard+24&family=Lugrasimo&family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="text/javascript" src="../assets/json/receitas.js"></script>
+    <script type="text/javascript" src="../js/conteudo.js"></script>
     <title>Conteudo</title>
 </head>
 <body>
@@ -45,30 +47,30 @@
                             <span class="material-symbols-outlined">grade</span>
                         </span>
                         <section class="conteudo">
-                            <figure>
-                                <img class="imagemConteudo" src="https://receitas123.com/wp-content/uploads/2023/09/sopa-de-inhame-com-cenoura.png" alt="sopa de inhame com cenoura">
+                            <figure id="figureReceita">
+                                <img id="imagemConteudo" class="imagemConteudo" src="" alt="">
                             </figure>
-                            <h6>
-                                Sopa de cenoura com Inhame
+                            <h6 id="hReceita">
+                                <!--Sopa de cenoura com Inhame-->
                             </h6>
                             <p>
-                                <ul>
-                                    <li>Óleo vegetal - 3 colheres de sopa</li>
+                                <ul id="ulIngradientes">
+                                    <!--<li>Óleo vegetal - 3 colheres de sopa</li>
                                     <li>Cenoura fatiada - 2 ½ xícaras de chá</li>
                                     <li>Inhame descascado e picado - 3 xícaras de chá</li>
                                     <li>Água - 6 xícaras de chá</li>
                                     <li>Açúcar mascavo - 1 colher de chá</li>
                                     <li>Salsa picada - ½ xícara de chá</li>
                                     <li>Cebolinha picada - ½ xícara de</li>
-                                    <li>Sal</li>
+                                    <li>Sal</li>-->
                                 </ul>
                             </p>
                         </section>
                     </section>
                 </div>
                 <div class="pagina2">
-                    <p>
-                        Modo de preparo: Refogue a cebolinha e as cenouras no óleo vegetal, mexendo de vez em quando. Acrescente a água, sal, o açúcar e os inhames. Cubra e cozinhe lentamente por 20 minutos. Passe a sopa na peneira. Volte ao fogo, prove e salpique a salsa.
+                    <p id="pPreparo">
+                        <!--Modo de preparo: Refogue a cebolinha e as cenouras no óleo vegetal, mexendo de vez em quando. Acrescente a água, sal, o açúcar e os inhames. Cubra e cozinhe lentamente por 20 minutos. Passe a sopa na peneira. Volte ao fogo, prove e salpique a salsa.-->
                     </p>
                 </div>
                 <section class="containerMarcaPagina">
@@ -107,5 +109,8 @@
         <a href="./Homepage.html">Homepage</a>
         <a href="./Sobre.html">Sobre nós</a>
      </footer>
+     <script>
+        updateConteudo();
+     </script>
 </body>
 </html>
