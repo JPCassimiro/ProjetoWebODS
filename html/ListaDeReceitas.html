@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&family=Jacquard+24&family=Lugrasimo&family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../assets/json/receitas.js"></script>
+    <script type="text/javascript" src="../js/listaDeReceitas.js"></script>
     <title>Lista De Receitas</title>
 </head>
 <body>
@@ -26,8 +28,8 @@
                     <button style="visibility: hidden;" class="marcaPagina" onclick="">Homepage</button>
                 </section>
                 <div class="pagina1">
-                    <ul>
-                        <li><a href="./ConteudoReceita.html">Sopa de cenoura com Inhame</a></li>
+                    <ul id="ulLista">
+                        <!--<li><a href="./ConteudoReceita.html">Sopa de cenoura com Inhame</a></li>-->
                     </ul>
                 </div>
                 <div class="pagina2">
@@ -49,6 +51,9 @@
     <footer>
         <a href="./Homepage.html">Homepage</a>
         <a href="./Sobre.html">Sobre nós</a>
-     </footer>
+    </footer>
+    <script>
+        updateLista();
+    </script>
 </body>
 </html>
