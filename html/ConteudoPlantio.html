@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&family=Jacquard+24&family=Lugrasimo&family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="text/javascript" src="../assets/json/plantio.js"></script>
+    <script type="text/javascript" src="../js/conteudoPlantio.js"></script>
     <title>Conteudo</title>
 </head>
 <body>
@@ -47,16 +49,16 @@
                     </section>
                     <section class="conteudo">
                         <figure>
-                            <img class="imagemConteudo" src="https://s2.glbimg.com/x-KlzHkUizYKhtvIQf5q9lIFsmc=/620x413/smart/e.glbimg.com/og/ed/f/original/2021/06/21/como-plantar-cenoura_2.jpg" alt="cenouras">
+                            <img class="imagemConteudo" id="imagemConteudo" src="" alt="">
                         </figure>
-                        <h6>
-                            Cenouras
+                        <h6 id="hPlantio">
+                            <!--Cenouras-->
                         </h6>
-                        <p>
-                            Cenouras podem ser plantadas em canteiros ou em vasos, algumas recomendações são.
+                        <p id="pPlantio">
+                            <!--Cenouras podem ser plantadas em canteiros ou em vasos, algumas recomendações são.-->
                         </p>
-                        <ul>
-                            <li>
+                        <ul id="ulPlantioPag1">
+                            <!--<li>
                                 Solo:
                                     Não colocar muitas pedrinhas no caso de plantio em um vaso.
                                     Uma boa mistura é 90% de terra, 10% de areia e mais uma parte organica com húmus ou esterco.
@@ -65,29 +67,29 @@
                                 Plantio:
                                     Plantar em cerca de 2cm de profundidade.
                                     Coloque varias sementes no mesmo lugar.
-                            </li>
+                            </li>-->
                         </ul>
                     </section>
                 </div>
                 <div class="pagina2">
                     <section class="conteudo">
-                        <ul>
-                            <li>
+                        <ul id="ulPlantioPag2">
+                            <!--<li>
                                 Irrigação:
                                     Pode ser feita de 12 em 12 horas.
                                     Não encharque a terra.
-                            </li>
-                        </ol>
-                        <a target="_blank" href="https://globorural.globo.com/vida-na-fazenda/noticia/2022/05/como-plantar-cenoura-veja-dicas-para-facilitar-cultivo.html">Fonte</a>
+                            </li>-->
+                        </ul>
+                        <a target="_blank" id="aPlantio" href="">Fonte</a>
                     </section>
                 </div>
                 <section class="containerMarcaPagina">
                     <div class="conjuntoMarcaPagina">
                         <button id="marcaHome" class="marcaPagina" onclick="location.href = './Homepage.html'">Homepage</button>
-                        <button id="marcaReceita" class="marcaPagina" onclick="location.href = './ListaDeReceitas.html'">Receitas</button>    
+                        <button id="marcaReceita" class="marcaPagina" onclick="location.href = './Lista.html?pagina=receitas'">Receitas</button>    
                     </div>
                     <div class="conjuntoMarcaPagina">
-                        <button id="marcaPlantio" class="marcaPagina" onclick="location.href = './ListaDePlantio.html'">Plantio</button>
+                        <button id="marcaPlantio" class="marcaPagina" onclick="location.href = './Lista.html?pagina=plantio'">Plantio</button>
                         <button id="marcaLogin" class="marcaPagina" onclick="location.href = './Login.html'">Logout</button>    
                     </div>
                     </section>
@@ -116,6 +118,9 @@
     <footer>
         <a href="./Homepage.html">Homepage</a>
         <a href="./Sobre.html">Sobre nós</a>
-     </footer>
+    </footer>
+    <script>
+        updateConteudoPlantio();
+    </script>
 </body>
 </html>

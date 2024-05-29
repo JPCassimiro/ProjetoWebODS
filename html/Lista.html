@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Dancing+Script:wght@400..700&family=Jacquard+24&family=Lugrasimo&family=Pacifico&family=Sevillana&display=swap" rel="stylesheet">
-    <title>Lista de Plantio</title>
+    <script type="text/javascript" src="../assets/json/receitas.js"></script>
+    <script type="text/javascript" src="../assets/json/plantio.js"></script>
+    <script type="text/javascript" src="../js/lista.js"></script>
+    <title>Lista</title>
 </head>
 <body>
     <header>
@@ -26,22 +29,20 @@
                     <button style="visibility: hidden;" class="marcaPagina" onclick="">Homepage</button>
                 </section>
                 <div class="pagina1">
-                    <ul>
-                        <li><a href="./ConteudoPlantio.html">Cenouras</a></li>
+                    <ul id="ulLista">
+                        <!--<li><a href="./ConteudoReceita.html">Sopa de cenoura com Inhame</a></li>-->
                     </ul>
                 </div>
                 <div class="pagina2">
-                    <p>
-                        Mais dicas de plantio em breve(2º parte do projeto)
-                    </p>
+                    <p>Mais em breve(2º parte do projeto)</p>
                 </div>
                 <section class="containerMarcaPagina">
                     <div class="conjuntoMarcaPagina">
                         <button id="marcaHome" class="marcaPagina" onclick="location.href = './Homepage.html'">Homepage</button>
-                        <button id="marcaReceita" class="marcaPagina" onclick="location.href = './ListaDeReceitas.html'">Receitas</button>    
+                        <button id="marcaReceita" class="marcaPagina" onclick="location.href = './Lista.html?pagina=receitas'">Receitas</button>    
                     </div>
                     <div class="conjuntoMarcaPagina">
-                        <button id="marcaPlantio" class="marcaPagina" onclick="location.href = './ListaDePlantio.html'">Plantio</button>
+                        <button id="marcaPlantio" class="marcaPagina" onclick="location.href = './Lista.html?pagina=plantio'">Plantio</button>
                         <button id="marcaLogin" class="marcaPagina" onclick="location.href = './Login.html'">Logout</button>    
                     </div>
                     </section>
@@ -51,6 +52,9 @@
     <footer>
         <a href="./Homepage.html">Homepage</a>
         <a href="./Sobre.html">Sobre nós</a>
-     </footer>
+    </footer>
+    <script>
+        updateLista();
+    </script>
 </body>
 </html>

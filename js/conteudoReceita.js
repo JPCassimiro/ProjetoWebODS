@@ -11,7 +11,7 @@ function getParameterByName(name, url) {//encontra receita baseado no url
 
 let receitaAtual = getParameterByName('key');//key da receita baseado na lista
 
-const updateConteudo = () => {
+const updateConteudoReceita = () => {
     //let fig = document.getElementById("figureReceita");
     let h = document.getElementById("hReceita");//pega os elementos a serem modificados
     let ul = document.getElementById("ulIngradientes");
