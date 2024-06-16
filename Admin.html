@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin</title>
+  </head>
+  <body>
+    <main>
+      <section class="containerLogin">
+        <section class="containerForm">
+          <form class="admForm" id="admForm">
+            <p class="header">Entre com os dados do usuário !</p>
+            <div class="campoForm">
+              <label for="nome">Nome:</label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+            <div class="campoForm">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <button id="Cadastrar" type="submit">Cadastrar Usuário</button>
+            <button id="limparBtn" onclick="LimparEntradas()">
+              Limpar entradas
+            </button>
+            <ul id="listaCad">
+              <li>
+                <span class="username">PedrinhoXD</span>
+                <span> | </span>
+                <span class="usermail">pedrotavio@gmail.com</span>
+                <span class="deleteBtn">☒</span>
+              </li>
+              <li>
+                <span class="username">Yurick</span>
+                <span> | </span>
+                <span class="usermail">yurick@gmail.com</span>
+                <span class="deleteBtn">☒</span>
+              </li>
+            </ul>
+            <button
+              id="CloseBtn"
+              style="pointer-events: all; opacity: 1; cursor: pointer"
+            >
+              Limpar Cadastros
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
