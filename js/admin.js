@@ -85,7 +85,7 @@ function removerUsuario(username) {
     localStorage.setItem("ListaUsuarios", JSON.stringify(ListaUsuarios));
     renderListaUsuarios();
   } else {
-    alert("Paciente não encontrado.");
+    alert("Usuario não encontrado.");
   }
 }
 
@@ -96,3 +96,105 @@ document.getElementById("admForm").addEventListener("submit", (event) => {
   usernameInput.value = "";
   emailInput.value = "";
 });
+
+
+let barraUsername = document.getElementById("barraPesquisaUsername");
+let barraEmail = document.getElementById("barraPesquisaEmail");
+barraUsername.addEventListener('input', () => {
+  if (barraUsername.value=="") {
+    renderListaUsuarios();
+  } else {
+    let encontrados = [];
+    Object.keys(ListaUsuarios).forEach(keys => {
+      if (barraUsername.value == ListaUsuarios[keys].username) {
+        encontrados.push(ListaUsuarios[keys]);
+      }
+    });
+    let ListaUsuariosElement = document.getElementById("listaCad");
+    ListaUsuariosElement.innerHTML = ""; // limpa o conteúdo HTML da lista de usuários
+    encontrados.forEach(function (usuario) {
+      //dados de criação da lista
+      const dataEnvio = new Date();
+      const dia = dataEnvio.getDate();
+      const mes = dataEnvio.getMonth() + 1;
+      const ano = dataEnvio.getFullYear();
+      let itemLista = document.createElement("li");
+      let txtLista = document.createTextNode(
+        `Data de Criação: ${dia}/${mes}/${ano} | Nome de Usuário: ${usuario.username} | E-mail: ${usuario.email}`
+      );
+      itemLista.appendChild(txtLista);
+
+      //caractere 'x' para remoção
+      let span = document.createElement("span");
+      let txtSpan = document.createTextNode("\u2612"); //caracter x
+      span.className = "deleteBtn";
+      span.appendChild(txtSpan);
+      itemLista.appendChild(span);
+
+      //Evento de clique para remover o usuário
+      span.onclick = function () {
+        removerUsuario(usuario.username);
+      };
+
+      //adicionar o <li> na <ul>
+      ListaUsuariosElement.appendChild(itemLista);
+    });
+  }
+});
+
+barraEmail.addEventListener('input', () => {
+  if (barraEmail.value == "") {
+    renderListaUsuarios();
+  } else {
+    let encontrados = [];
+    Object.keys(ListaUsuarios).forEach(keys => {
+      if (barraEmail.value == ListaUsuarios[keys].email) {
+        encontrados.push(ListaUsuarios[keys]);
+      }
+    });
+    let ListaUsuariosElement = document.getElementById("listaCad");
+    ListaUsuariosElement.innerHTML = ""; // limpa o conteúdo HTML da lista de usuários
+    encontrados.forEach(function (usuario) {
+      //dados de criação da lista
+      const dataEnvio = new Date();
+      const dia = dataEnvio.getDate();
+      const mes = dataEnvio.getMonth() + 1;
+      const ano = dataEnvio.getFullYear();
+      let itemLista = document.createElement("li");
+      let txtLista = document.createTextNode(
+        `Data de Criação: ${dia}/${mes}/${ano} | Nome de Usuário: ${usuario.username} | E-mail: ${usuario.email}`
+      );
+      itemLista.appendChild(txtLista);
+
+      //caractere 'x' para remoção
+      let span = document.createElement("span");
+      let txtSpan = document.createTextNode("\u2612"); //caracter x
+      span.className = "deleteBtn";
+      span.appendChild(txtSpan);
+      itemLista.appendChild(span);
+
+      //Evento de clique para remover o usuário
+      span.onclick = function () {
+        removerUsuario(usuario.username);
+      };
+
+      //adicionar o <li> na <ul>
+      ListaUsuariosElement.appendChild(itemLista);
+    });
+  }
+});
+
+barraEmail.style.display = "block";
+barraUsername.style.display = "none";
+
+function troca() {
+  barraEmail.value = "";
+  barraUsername.value = "";
+  if (barraEmail.style.display == "block") {
+    barraEmail.style.display = "none";
+    barraUsername.style.display = "block";
+  } else if (barraUsername.style.display == "block") {
+    barraUsername.style.display = "none";
+    barraEmail.style.display = "block";
+  }
+}

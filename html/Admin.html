@@ -30,20 +30,6 @@
             <button id="limparBtn" onclick="LimparEntradas()">
               Limpar entradas
             </button>
-            <ul id="listaCad">
-              <li>
-                <span class="username">PedrinhoXD</span>
-                <span> | </span>
-                <span class="usermail">pedrotavio@gmail.com</span>
-                <span class="deleteBtn">☒</span>
-              </li>
-              <li>
-                <span class="username">Yurick</span>
-                <span> | </span>
-                <span class="usermail">yurick@gmail.com</span>
-                <span class="deleteBtn">☒</span>
-              </li>
-            </ul>
             <button
               id="CloseBtn"
               style="pointer-events: all; opacity: 1; cursor: pointer"
@@ -51,6 +37,11 @@
               Limpar Cadastros
             </button>
           </form>
+        <input id="barraPesquisaUsername" type="text" placeholder="Procurar por Nome...">
+        <input id="barraPesquisaEmail" type="text" placeholder="Procurar por Email...">
+        <button onclick="troca()" id="trocar">&#10549</button>
+        <ul id="listaCad">
+        </ul>
         </section>
       </section>
     </main>

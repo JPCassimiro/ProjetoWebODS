@@ -1,3 +1,10 @@
+#barraPesquisaEmail{
+  display: none;
+}
+#barraPesquisaUsername{
+  display: none;
+}
+
 .containerLogin {
   display: flex;
   flex: 1;
@@ -19,8 +26,10 @@ body {
   display: flex;
   margin: 1%;
   background-color: #dfe0a7;
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  height: 800px;
+  flex-direction: column;
+  overflow: auto;
 }
 
 .form {
@@ -56,7 +65,7 @@ header {
 }
 
 .header {
-  align-self: center;
+  text-align: center;
 }
 
 input {
