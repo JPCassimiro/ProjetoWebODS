@@ -1,7 +1,7 @@
-#barraPesquisaEmail{
+#barraPesquisaEmail {
   display: none;
 }
-#barraPesquisaUsername{
+#barraPesquisaUsername {
   display: none;
 }
 
@@ -87,16 +87,17 @@ input {
   font-family: "Cedarville cursive", cursive;
 }
 
-#CloseBtn {
-  margin-left: 28%;
+#delAllBtn {
+  align-self: center;
   background-color: #aa5d0c;
   text-align: center;
   margin-bottom: 5%;
-  width: 45%;
-  height: 7%;
+  width: 30%;
+  height: 4%;
   color: white;
   border-radius: 5px;
   font-family: "Cedarville cursive", cursive;
+  font-size: large;
 }
 
 #limparBtn {
@@ -148,11 +149,11 @@ p {
   font-weight: 400;
 }
 
-#trocar{
+#trocar {
   align-self: center;
   background-color: #aa5d0c;
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
   width: 30%;
   height: 4%;
   color: white;
@@ -161,7 +162,7 @@ p {
   font-size: large;
 }
 
-#homepage{
+#homepage {
   margin-left: 28%;
   background-color: #aa5d0c;
   text-align: center;

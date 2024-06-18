@@ -30,18 +30,33 @@
             <button id="limparBtn" onclick="LimparEntradas()">
               Limpar entradas
             </button>
-            <button id="CloseBtn" style="pointer-events: all; opacity: 1; cursor: pointer">
-              Limpar Cadastros
-            </button>
-            <button onclick="location.href = './Homepage.html'" id="homepage" style="pointer-events: all; opacity: 1; cursor: pointer">
+            <button
+              onclick="location.href = './Homepage.html'"
+              id="homepage"
+              style="pointer-events: all; opacity: 1; cursor: pointer"
+            >
               Retornar a homepage
             </button>
           </form>
-        <input id="barraPesquisaUsername" type="text" placeholder="Procurar por Nome...">
-        <input id="barraPesquisaEmail" type="text" placeholder="Procurar por Email...">
-        <button onclick="troca()" id="trocar">Trocar parametro</button>
-        <ul id="listaCad">
-        </ul>
+          <input
+            id="barraPesquisaUsername"
+            type="text"
+            placeholder="Procurar por Nome..."
+          />
+          <input
+            id="barraPesquisaEmail"
+            type="text"
+            placeholder="Procurar por Email..."
+          />
+          <button onclick="troca()" id="trocar">Trocar parametro</button>
+          <ul id="listaCad"></ul>
+          <button
+            id="delAllBtn"
+            style="pointer-events: all; opacity: 1; cursor: pointer"
+            onclick="delAll()"
+          >
+            Limpar Cadastros
+          </button>
         </section>
       </section>
     </main>

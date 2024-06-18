@@ -89,6 +89,13 @@ function removerUsuario(username) {
   }
 }
 
+function delAll() {
+  let itemList = document.getElementById("listaCad");
+  ListaUsuarios.length = 0;
+  itemList.innerHTML = "";
+  localStorage.setItem("ListaUsuarios", JSON.stringify(ListaUsuarios));
+}
+
 //Evento para adicionar usuario
 document.getElementById("admForm").addEventListener("submit", (event) => {
   event.preventDefault();
@@ -96,7 +103,6 @@ document.getElementById("admForm").addEventListener("submit", (event) => {
   usernameInput.value = "";
   emailInput.value = "";
 });
-
 
 let barraUsername = document.getElementById("barraPesquisaUsername");
 let barraEmail = document.getElementById("barraPesquisaEmail");
@@ -118,11 +124,11 @@ function troca() {
 }
 
 barraUsername.addEventListener("input", () => {
-  if (barraUsername.value=="") {
+  if (barraUsername.value == "") {
     renderListaUsuarios();
   } else {
     let encontrados = [];
-    Object.keys(ListaUsuarios).forEach(keys => {
+    Object.keys(ListaUsuarios).forEach((keys) => {
       if (barraUsername.value == ListaUsuarios[keys].username) {
         encontrados.push(ListaUsuarios[keys]);
       }
@@ -164,7 +170,7 @@ barraEmail.addEventListener("input", () => {
     renderListaUsuarios();
   } else {
     let encontrados = [];
-    Object.keys(ListaUsuarios).forEach(keys => {
+    Object.keys(ListaUsuarios).forEach((keys) => {
       if (barraEmail.value == ListaUsuarios[keys].email) {
         encontrados.push(ListaUsuarios[keys]);
       }
@@ -200,4 +206,3 @@ barraEmail.addEventListener("input", () => {
     });
   }
 });
-
