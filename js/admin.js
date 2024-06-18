@@ -100,7 +100,24 @@ document.getElementById("admForm").addEventListener("submit", (event) => {
 
 let barraUsername = document.getElementById("barraPesquisaUsername");
 let barraEmail = document.getElementById("barraPesquisaEmail");
-barraUsername.addEventListener('input', () => {
+
+barraEmail.style.display = "block";
+barraUsername.style.display = "none";
+
+function troca() {
+  barraEmail.value = "";
+  barraUsername.value = "";
+  if (barraEmail.style.display == "block") {
+    barraEmail.style.display = "none";
+    barraUsername.style.display = "block";
+  } else if (barraUsername.style.display == "block") {
+    barraUsername.style.display = "none";
+    barraEmail.style.display = "block";
+  }
+  renderListaUsuarios();
+}
+
+barraUsername.addEventListener("input", () => {
   if (barraUsername.value=="") {
     renderListaUsuarios();
   } else {
@@ -142,7 +159,7 @@ barraUsername.addEventListener('input', () => {
   }
 });
 
-barraEmail.addEventListener('input', () => {
+barraEmail.addEventListener("input", () => {
   if (barraEmail.value == "") {
     renderListaUsuarios();
   } else {
@@ -184,17 +201,3 @@ barraEmail.addEventListener('input', () => {
   }
 });
 
-barraEmail.style.display = "block";
-barraUsername.style.display = "none";
-
-function troca() {
-  barraEmail.value = "";
-  barraUsername.value = "";
-  if (barraEmail.style.display == "block") {
-    barraEmail.style.display = "none";
-    barraUsername.style.display = "block";
-  } else if (barraUsername.style.display == "block") {
-    barraUsername.style.display = "none";
-    barraEmail.style.display = "block";
-  }
-}

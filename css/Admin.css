@@ -26,10 +26,11 @@ body {
   display: flex;
   margin: 1%;
   background-color: #dfe0a7;
-  width: 600px;
+  width: 660px;
   height: 800px;
   flex-direction: column;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .form {
@@ -78,7 +79,7 @@ input {
   margin-top: 5%;
   margin-left: 28%;
   background-color: #aa5d0c;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   width: 45%;
   height: 7%;
   color: white;
@@ -90,7 +91,7 @@ input {
   margin-left: 28%;
   background-color: #aa5d0c;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   width: 45%;
   height: 7%;
   color: white;
@@ -99,12 +100,12 @@ input {
 }
 
 #limparBtn {
-  margin-left: 33%;
+  margin-left: 28%;
   background-color: #aa5d0c;
   text-align: center;
-  margin-bottom: 4%;
-  width: 35%;
-  height: 6%;
+  margin-bottom: 5%;
+  width: 45%;
+  height: 7%;
   color: white;
   border-radius: 5px;
   font-family: "Cedarville cursive", cursive;
@@ -145,4 +146,30 @@ ul li {
 p {
   font-size: xx-large;
   font-weight: 400;
+}
+
+#trocar{
+  align-self: center;
+  background-color: #aa5d0c;
+  text-align: center;
+  margin-bottom: 4%;
+  width: 30%;
+  height: 4%;
+  color: white;
+  border-radius: 5px;
+  font-family: "Cedarville cursive", cursive;
+  font-size: large;
+}
+
+#homepage{
+  margin-left: 28%;
+  background-color: #aa5d0c;
+  text-align: center;
+  margin-bottom: 5%;
+  width: 45%;
+  height: 7%;
+  color: white;
+  border-radius: 5px;
+  font-family: "Cedarville cursive", cursive;
+  font-size: large;
 }
