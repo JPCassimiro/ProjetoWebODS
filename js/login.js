@@ -1,6 +1,5 @@
 //Função para recuperar lista de usuários
 let ListaUsuarios = [];
-console.log(JSON.parse(localStorage.getItem("ListaUsuarios")));
 
 function getListaUsuarios() {
     let storedList = JSON.parse(localStorage.getItem("ListaUsuarios"));
@@ -10,7 +9,10 @@ function getListaUsuarios() {
 
 let form = document.getElementById("form");
 
+
+
 form.addEventListener("submit",(event)=>{
+    event.preventDefault();
     let email = document.getElementById("email");
     let senha = document.getElementById("senha");
     getListaUsuarios();
@@ -18,5 +20,7 @@ form.addEventListener("submit",(event)=>{
         location.href = "./Homepage.html";
     }else{
         alert("Usuario ou senha errados!");
+        email.value = "";
+        senha.value = "";
     }
 });

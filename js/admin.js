@@ -1,6 +1,7 @@
 let ListaUsuarios = [];
 let usernameInput = document.getElementById("nome");
 let emailInput = document.getElementById("email");
+let senhaInput = document.getElementById("senha");
 
 //Função para Limpar as entradas do formulário
 function LimparEntradas() {
@@ -18,7 +19,7 @@ function getListaUsuarios() {
 }
 
 //Função para adicionar novo usuário
-function adicionarUsuario(username, email) {
+function adicionarUsuario(username, email, senha) {
   getListaUsuarios();
   for (let usuario of ListaUsuarios) {
     if (username == usuario.username) {
@@ -32,7 +33,7 @@ function adicionarUsuario(username, email) {
   console.log("Passei aqui");
 
   //caso passe das verificações, adiciona-se um novo usuário
-  let newUsuario = { username: username, email: email }; //criação de um novo objeto de usuario
+  let newUsuario = { username: username, email: email, senha: senha }; //criação de um novo objeto de usuario
   ListaUsuarios.push(newUsuario); //adiciona o novo usuário ao final da lista de pacientes
   localStorage.setItem("ListaUsuarios", JSON.stringify(ListaUsuarios));
   renderListaUsuarios();
@@ -99,9 +100,10 @@ function delAll() {
 //Evento para adicionar usuario
 document.getElementById("admForm").addEventListener("submit", (event) => {
   event.preventDefault();
-  adicionarUsuario(usernameInput.value, emailInput.value);
+  adicionarUsuario(usernameInput.value, emailInput.value, senhaInput.value);
   usernameInput.value = "";
   emailInput.value = "";
+  senhaInput.value = "";
 });
 
 let barraUsername = document.getElementById("barraPesquisaUsername");

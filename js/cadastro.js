@@ -30,7 +30,6 @@ function adicionarUsuario(username,email,idade,estado,senha) {
 
 
 form.addEventListener("submit",(event)=>{
-    console.log('teste');
     event.preventDefault();
     let cadastrar = document.getElementById("form");
     let username = document.getElementById("nome");
