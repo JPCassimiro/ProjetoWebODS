@@ -29,6 +29,6 @@ const updateConteudoPlantio = () => {
         let li = document.createElement("li");
         let instrucao = document.createTextNode(listaPlantio.plantio[plantioAtual].instrucoes[key]);
         li.appendChild(instrucao);
-        ul1.appendChild(li);
+        ul2.appendChild(li);
     });
 }
